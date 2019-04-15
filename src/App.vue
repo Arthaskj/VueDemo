@@ -2,13 +2,16 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <router-link class="nav-item" to="/demo">Demo</router-link>
+    <button-counter></button-counter>
     <router-view/>
   </div>
 </template>
 
 <script>
+import ButtonCounter from "@/components/ButtonCounter"
 export default {
-  name: 'App'
+  name: 'App',
+  components:{ButtonCounter }
 }
 </script>
 
